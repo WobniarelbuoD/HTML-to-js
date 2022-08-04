@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+        .bg-1 {
+            background-color: purple;
+        }
+        .bg-2 {
+            /* background-image: url('https://cdnb.artstation.com/p/assets/images/images/024/538/827/original/pixel-jeff-clipa-s.gif?1582740711'); */
+            background-image: url('images/background.gif');
+            /* Nuotraukos pločio IR aukščio nustatymas vienu parametru */
+            background-size: 400px;
+            /* Atskiras nurodymas nuotraukos pločiui ir auksčiui */
+            /* background-size: 120px 60px; */
+            /* background-size: 80%; */
+            /* Nurodomas automatinis padengimas per visą elemento plotį ir aukštį */
+            /* background-size: cover; */
+            /* Fono kartojimo išjungimas*/
+            background-repeat: no-repeat; 
+            /* Fono nuotraukos kartojimas į dešinę pusę */
+            /* background-repeat: repeat-x; */
+            /* Fono nuotraukos kartojimas žemyn */
+            /* background-repeat: repeat-y; */
+            background-position: -17% 120px;
+            /* background-position: right bottom;
+            background-position: center center; */
+            /* Visu aukščiau išvardintų savybių aprašymas vienoje eilutėje: */
+            background: url('images/background.gif') no-repeat -17% 120px / 400px;           
+        }
+    </style>
+</head>
+<body class="bg-1 bg-2">
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.kontikas{
+    width:1000px;
+    height:500px;
+    background-color:aqua;
+    position: absolute;
+    left:25%;
+    top:20%;
+}
+#image{
+    position:absolute;
+}
+#text1{
+    position:absolute;
+    top: 40%;
+}
+#text{
+    position:absolute;
+    top: 50%;
+    font-size: 2rem;
+}
+#stalas{
+    position:absolute;
+    top:60%;
+    font-size: 2rem;
+}
+#stalas th{
+    padding: 20px;
+}

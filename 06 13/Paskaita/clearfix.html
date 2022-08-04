@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearfix</title>
+    <style>
+        #list {
+            background: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        /* #list::after {
+            content: "";
+            display: table;
+            clear: both;
+        } */
+        #list li {
+            display: block;
+            float: left;
+            border: 2px solid red;
+        }
+
+        .clearfix::before,
+        .clearfix::after {
+            display: table;
+            clear: both;
+        }
+
+        .clearfix::before {
+            content: "Pradzia";
+        }
+
+        .clearfix::after {
+            content: "Pabaiga";
+        }
+
+        #list,
+        li {
+            color: white;
+        }
+        /* 
+        #list li::before {
+            content: "Tikrai "
+        }
+        #list li::after {
+            content: " Elementas"
+        }
+        pseudo-elementų žymėjimas
+        ::before 
+        ::after  */
+    </style>
+</head>
+<body>
+    <ul id="list" class="clearfix">
+        <li>Pirmas</li>
+        <li>Antras</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+        <li>Trečias</li>
+    </ul>
+</body>
+</html>

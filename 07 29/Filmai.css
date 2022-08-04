@@ -1,0 +1,16 @@
+.filmai{
+width:20%;
+padding:0.5%;
+margin:0;
+}
+.Nuotrauka{
+    width:100%;
+}
+.filmai div{
+    width:auto;
+}
+.batonas{
+    position:absolute;
+    left:45%;
+    top:96%;
+}

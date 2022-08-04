@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+h1{
+    display:flex;
+    justify-content: center;
+}
+.Head{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Lato', sans-serif;
+    font-weight:500;
+    font-size: 20rem;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+.buttons button{
+    font-size: 0.9rem;
+    padding:15px;
+    border-radius: 5px;
+    border: solid lightgray 1px;
+    background-color: white;
+    margin:3px;
+}
+.buttons button:nth-child(1){
+    background-color: #1565c0;
+    color:white;
+}
+.Suppa{
+    align-items: center;
+    background-color: rgb(243, 239, 239);
+    box-sizing: border-box;
+    max-width:25%;
+    padding:20px 20px;
+    border:solid lightgray 1px;
+}
+.Suppa input{
+    max-width: 30px;
+    padding:10px;
+    border-radius:5px;
+    border: solid gray 1px;
+    margin: 0 20px;
+}
+.Suppa button{
+    background-color:#1565c0;
+    border-radius:5px;
+    color:white;
+    padding: 10px 20px;
+}
+.mini{
+    display:flex;
+    justify-content: center;
+}
+.H {
+    font-size: 20rem;
+    max-height:360px
+}
+.M{
+    font-size: 15rem;
+}
+.S{
+    font-size:10rem;
+    height:210px;
+}
+.MS{
+    font-size:5rem;
+    height:130px;
+}
+
+
+</style>
+</head>
+<body>
+    <h1>An Old Timer Timer</h1>
+<div class="Head">
+    <div class="H" data-content="hours">0</div>
+    <div class="M" data-content="minutes">00</div>
+    <div class="S" data-content="seconds">00</div>
+    <div class="MS" data-content="miliseconds">00</div>
+</div>
+
+<div class="buttons">
+    <button id="10" type="button" onclick="Pause()">PAUSE</button>
+    <button type="button" onclick="Restart()">RESTART</button>
+    <button type="button" onclick="Reset()">RESET</button>
+</div>
+<div class="mini">
+<div class="Suppa">
+    <input name="Val" id="1" type="number" value="0"></input>
+    <input name="Min" id="2" type="number" value="15"></input>  
+    <input name="Sec" id="3" type="number" value="00"></input>
+    <button id="Start2" type="button" onclick="Run()">START TIMER</button>
+</div>
+</div>
+    <script src="ToYourDoom.js"></script>
+</body>
+</html>

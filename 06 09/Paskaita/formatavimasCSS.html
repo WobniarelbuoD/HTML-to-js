@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatavimas CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            margin: 0;
+        }
+        .bold {
+            font-weight: bold; 
+            font-weight: normal;
+            font-weight: 100;
+            font-weight: 300;
+            font-weight: 400;
+            font-weight: 500;
+            font-weight: 600;
+            font-weight: 800;
+            font-weight: 900;
+        }
+        .italic {
+            font-style: normal;
+            font-style: oblique; /* Labai retas variantas */
+            font-style: italic;
+        }
+        strong {
+            font-weight: normal;
+        }
+        a {
+            text-decoration: none;
+        }
+        .turinys a {
+            text-decoration: underline;
+        }
+        .turinys span.del {
+            text-decoration: line-through;
+        }
+        nav {
+            background: rgb(53, 53, 53)
+        }
+        nav ul {
+            /* Ši savybė nuima rikiavimo stilistiką */
+            list-style: none; 
+            /* Nuimame atitraukimus */
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background: white;
+            color: black;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 100%;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Titulinis</a></li> 
+                <li><a href="#">Apie Mus</a></li> 
+                <li><a href="#">Kontaktai</a></li> 
+                <li><a href="#">Karjera</a></li> 
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Autorius</h1>
+        <p><span class="bold italic">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. <strong>Quidem repudiandae culpa dolorem</strong> iure eos quam facilis magnam dolor enim qui!</p>
+        <ul>
+            <li><a href="#">Nuoroda</a></li>
+            <li><a href="#">Nuoroda</a></li>
+            <li><a href="#">Nuoroda</a></li>
+        </ul>
+        <div class="turinys">
+            <p><span class="del">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span> Placeat corporis omnis atque fugiat consequatur nobis sunt odio ex blanditiis quae aliquam alias architecto quam, cupiditate distinctio aut deleniti facilis impedit modi? <strong class="del">Totam magni voluptatum facilis accusantium dignissimos magnam vel atque rerum </strong>exercitationem quisquam, tempore accusamus quibusdam tempora alias iste laborum expedita possimus illo debitis suscipit consequuntur? <a href="#">Repellat laborum, ullam natus odio</a> maiores laudantium nostrum quis assumenda dicta molestias tempora distinctio, qui temporibus. Quisquam alias, totam illum culpa eum libero nemo corporis neque, quidem earum modi non nam voluptatibus eaque magnam quas sint accusantium? Quae et ipsum eligendi, facere sunt deserunt.</p>
+        </div>
+    </div>
+</body>
+</html>

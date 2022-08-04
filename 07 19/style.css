@@ -1,0 +1,22 @@
+.form{
+    margin-top:10%;
+    background-color: rgb(134, 213, 219);
+    border-radius: 15px;
+}
+.Neuzpildyta{
+    border: 2px solid red;
+}
+#Error{
+    color:red;
+    position:relative;
+    left:38%;
+    top:5%;
+    display:none;
+}
+#BadRoast{
+    color:blue;
+    position:relative;
+    left:40%;
+    top:8%;
+    display:none;
+}

@@ -1,0 +1,15 @@
+#AddToCart{
+    padding:2% 20%;
+    max-height:40px;
+}
+#Background{
+    width:1000px;
+    min-height:800px;
+    border-radius: 100px;;
+}
+#Kiekis{
+    max-width:7%;
+}
+.Poof{
+    display: none;
+}

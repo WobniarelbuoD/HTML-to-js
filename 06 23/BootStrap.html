@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+    .Background {
+        background-color: hsl(0deg 0% 94%);
+    }
+
+    .Background2 {
+        background-color: hsl(0deg 0% 100%);
+    }
+
+    h1 {
+        background-color: hsl(0deg 0% 97%);
+    }
+
+    .X {
+        color: red;
+        font-size: 1.2rem;
+    }
+</style>
+
+<body>
+    <div class="Background py-4">
+        <div class="container">
+            <div class="Background2">
+                <h1 class="p-4 border-bottom">Shopping Cart</h1>
+                <div class="p-4">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="text-center align-middle">
+                                <th class="p-4 fw-bolder">Croduct Name & Details</th>
+                                <th class=" fw-bolder">Price</th>
+                                <th class=" fw-bolder">Quantity</th>
+                                <th class=" fw-bolder">Total</th>
+                                <th class="p-0"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="p-4 d-flex flex-row">
+                                    <div><img src="Lad1.PNG" alt="Lad"></div>
+                                    <div class="fw-normal ps-4">Product 1 <br> Color:<span style="font-size:15px;color:red"
+                                            class="material-icons">circle</span> Size:<b>EU 37</b> Ships
+                                        from:<b>China</b></div>
+                                </th>
+                                <td class=" text-end pe-4 align-middle fw-semibold">$57.55</td>
+                                <td class="text-center align-middle px-4">
+                                    <div class="border">2</div>
+                                </td>
+                                <td class="text-end pe-4 align-middle fw-semibold">$115.01</td>
+                                <td class="text-center align-middle p-0"><span class="material-icons X">close</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="p-4 d-flex flex-row">
+                                    <div><img src="Lad2.PNG" alt="Lad"></div>
+                                    <div class="fw-normal ps-4">Product 2 <br> Color:<span style="font-size:15px;"
+                                            class="material-icons">circle</span> Storage:<b>32GB</b>
+                                        Warrenty:<b>Standard - 1 year</b> Ships from:<b>China</b></div>
+                                </th>
+                                <td class="text-end pe-4 align-middle fw-semibold">$1049.00</td>
+                                <td class="text-center align-middle px-4">
+                                    <div class="border">1</div>
+                                </td>
+                                <td class="text-end pe-4 align-middle fw-semibold">$1049.00</td>
+                                <td class="text-center align-middle p-0 px-2"><span class="material-icons X">close</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="p-4 d-flex flex-row">
+                                    <div><img src="Lad3.PNG" alt="Lad"></div>
+                                    <div class="fw-normal ps-4">Product 3 <br> Ships from:<b>Germany</b></div>
+                                </th>
+                                <td class="text-end pe-4 align-middle fw-semibold">$20.55</td>
+                                <td class="text-center align-middle px-4">
+                                    <div class="border">1</div>
+                                </td>
+                                <td class="text-end pe-4 align-middle fw-semibold">$20.55</td>
+                                <td class="text-center align-middle p-0"><span class="material-icons X">close</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p style="color:gray">Promocode</p>
+                            <div><input class="form-control" type="text" placeholder="ABC"></label></div>
+                        </div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="pe-4">Discount</td>
+                                    <td>Total Price</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-end pe-4">$20</th>
+                                    <th>$1164.65</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div  class="d-flex justify-content-end">
+                    <button style="color:black;" type="button" class="btn btn-light fs-5 px-3 fw-normal">Back To Shopping</button>
+                    <button type="button" class="btn btn-primary ms-3 px-3 fs-5">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

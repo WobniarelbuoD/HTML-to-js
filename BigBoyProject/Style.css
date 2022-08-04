@@ -1,0 +1,771 @@
+
+    * {
+        margin:0;
+    }
+
+    body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#TopBar {
+    position:fixed;
+    width:100%;
+    z-index:100;
+    justify-content:space-around;
+    padding:15px;
+    color:white;
+    font-weight:bolder;
+}
+    .Background_image{
+        background:url('Background.jpg') no-repeat center center / cover;
+        position:relative;
+        z-index: 1;
+    }
+
+    .Background_image::before {
+    content: "";
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(0,60,0,0.9) 0%, rgba(30,110,20,0.9) 25%, rgba(20,155,0,0.9) 50%, rgba(60,200,60,0.9) 75%, rgba(20,240,45,0.9) 100%);
+}
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        z-index: 5;
+        max-width:1200px;
+        padding-top:100px;
+        padding-bottom:100px;
+        box-sizing: border-box;
+    }
+
+    .flex {
+        display:flex;
+        
+    }
+    .Paragraph{
+        color:#707070;
+        font-weight:400;
+        line-height:1.7;
+        font-size: 1.15rem;
+    }
+    .TopUp{
+        color:rgba(20,155,0,0.9);
+        font-weight:600;
+        font-size:0.95rem;
+        text-transform: uppercase;
+    }
+    .Big{
+        font-size: 2.441em;
+        font-weight: 600;
+        line-height: 1.21;
+        text-transform: capitalize;
+    }
+    div ul li{
+        padding:15px;
+        list-style-type:none;
+        align-items:center;
+        margin-left:auto;
+    }
+    .text1{
+        margin-top: 200px;
+        margin-right:100px;
+        color:white;
+        width:540px;
+    }
+    .text1 h1{
+        font-size:42px;
+        padding-bottom:15px;
+    }
+    div div a{
+        border:2px solid white;
+        border-radius: 25px;
+        padding:15px;
+        text-decoration:none;
+        color:white;
+        font-weight:700;
+
+    }
+    div div a:hover{
+        background-color:white;
+        color: rgba(0,60,0,0.9);
+        transition: 0.2s;
+    }
+
+    .Morph {
+     font-size:1.25rem;
+     font-weight:300;
+     margin-bottom:30px;
+     line-height:2;
+    }
+    div ul li a{
+        color:white;
+        text-decoration:none;
+        opacity:0.9;
+        font-weight:normal;
+    }   
+
+    div ul li a:hover{
+        opacity:1;
+        transition: 0.2s;
+    }
+    .Counter{
+        flex-direction: row;
+        max-width: 1000px;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow:  0 2px 15px 0 rgb(0 0 0 / 12%);
+        position:absolute;
+        background-color: white;
+        left:23%;
+        top:830px;
+        padding:25px 0px;
+    }
+    .Align{
+        justify-content:space-evenly;
+    }
+    .AlignCenter{
+        justify-content: center;
+        flex-direction:column;
+    }
+    .AlignT{
+        Text-align:center;
+    }
+    .Counter li div{
+        margin:0px 50px;
+        text-align: center;
+    }
+    .Counter li div h1{
+        color: rgba(20,155,0,0.9);
+        font-size:25px;
+    }
+    .Counter li div p{
+        color:#707070;
+        font-size:15px;
+    }
+    .LinesLeft{
+    border-left: 1px solid rgb(0 0 0 / 12%);
+    margin-left:0;
+    width:219px;
+    }
+    .LinesRight{
+    border-right: 1px solid rgb(0 0 0 / 12%);
+    margin-left:0;
+    width:219px;
+    }
+    .White{
+        Background-color:white;
+    }
+    .Gray{
+        Background-color:#f4f7fa;
+        width:100%;
+    }
+    .Icon{
+        font-size:12px;
+        background-color:rgba(20,155,0,0.9);
+        padding:3.75px 7.5px;
+        border-radius: 0.25rem;
+        color:white;
+        margin-right:15px;
+    }
+    .Key{
+        flex-direction: column;
+        padding-top:150px;
+        padding-left:20%;
+        padding-right:20%;
+        padding-bottom:150px
+    }
+    .key3{
+        padding:23px;
+        width:250px;
+        margin:0px 15px;
+        border-radius:1rem;
+        box-shadow:  0 2px 15px 0 rgb(0 0 0 / 12%);
+    }   
+    .key3 h2{
+        font-size: 1.25em;
+        padding-top:15px;
+        line-height: 20px;
+    }
+    .key3 p{
+        line-height: 20px;
+        color:#6c757d;
+        padding:15px 0px;
+    }
+    .key3 div{
+        height:39px;
+        color: rgba(20,155,0,0.9);
+    }
+    .key3:hover{
+        background-color: rgba(20,155,0,0.9);
+        color:white;
+        transition:0.2s;
+        position:relative;
+        bottom:10px;
+        box-shadow:  0 2px 15px 0 rgb(0 0 0 / 12%);
+    }
+    .key3:hover div {
+        color:white;
+        transition:0.2s;
+    }
+    .key3:hover p {
+        color:white;
+        transition:0.2s;
+    }
+    .Gray div div h3{
+        color:rgba(20,155,0,0.9);
+        font-size:15px;
+        padding-bottom:10px;
+    }
+    .Gray div div p{
+        Font-size: 2.441em;
+        font-weight:600;
+        padding-bottom:20px;
+    }
+    .Gray div div span{
+        line-height: 2;
+        font-size:1rem;
+        color:#707070;
+    }
+    .Gray div div ul{
+        Padding-top:20px;
+        padding-left:0;
+    }
+    .Gray div div ul li{
+        padding:15px 0px;
+        font-size:15px;
+        color:#707070;
+    }
+    .Above{
+        text-align: center;
+        padding-bottom:50px;
+    }
+    .Above h3{
+        font-weight: 600;
+        color:rgba(20,155,0,0.9);
+        text-transform: uppercase;
+        font-size:1rem;
+        padding-bottom:5px;
+    }
+    .Above p{
+        font-size: 2.441em;
+        padding-bottom:15px;
+        font-weight:bold;
+    }
+    .Above span{
+        color:#707070;
+        font-size:100%;
+        line-height: 1.7;
+        padding-bottom:20px;    
+    }
+    .container div div div h3{
+        Padding-bottom:20px;
+    }
+    .Features{
+        padding-bottom:100px;
+    }
+    .Features div div div p{
+        color:#707070;
+        font-weight:400;
+        line-height:1.7;
+    }
+    .Left{
+        display:flex;
+        flex-direction: column;
+        width:25%;
+        padding-left:100px;
+        margin-right:25px;
+    }
+    .Tuscias1::before{
+        font-family:"Material Icons";
+        content:"sentiment_satisfied_alt";
+        font-size:25px;
+        background-color: #efdff7;
+        color:#b17cc6;
+        position:relative;
+        left:-70px;
+        bottom:-50px;
+        border-radius: 50%;
+        border: 12px solid #efdff7;
+        }
+    .Tuscias2::before{
+        font-family:"Material Icons";
+        content:"polyline";
+        font-size:25px;
+        background-color: #c6e6fd;
+        color:#63b0e3;
+        position:relative;
+        left:-70px;
+        bottom:-50px;
+        border-radius: 50%;
+        border: 12px solid #c6e6fd;
+        }
+    .Tuscias3::before{
+        font-family:"Material Icons";
+        content:"headset_mic";
+        font-size:25px;
+        background-color: #efe3e3;
+        color: #ed7265;
+        position:relative;
+        left:-70px;
+        bottom:-50px;
+        border-radius: 50%;
+        border: 12px solid #efe3e3;
+        }
+    .Tuscias4::before{
+        font-family:"Material Icons";
+        content:"air";
+        font-size:25px;
+        background-color: #ddedea;
+        color:#45d7ba;
+        position:relative;
+        left:-70px;
+        bottom:-50px;
+        border-radius: 50%;
+        border: 12px solid #ddedea;
+        }
+    .Tuscias5::before{
+        font-family:"Material Icons";
+        content:"recent_actors";
+        font-size:25px;
+        background-color: #ffe0e3;
+        color:#bd2130;
+        position:relative;
+        left:-70px;
+        bottom:-50px;
+        border-radius: 50%;
+        border: 12px solid #ffe0e3;
+        }
+    .Tuscias6::before{
+    font-family:"Material Icons";
+    content:"palette";
+    font-size:25px;
+    background-color: #e2e8ff;
+    color:#6582ed;
+    position:relative;
+    left:-70px;
+    bottom:-50px;
+    border-radius: 50%;
+    border: 12px solid #e2e8ff;
+    }
+
+    .Video{
+        background:url('video-bg.jpg') no-repeat center center / cover;
+        position:relative;
+        text-align: center;
+        z-index:1;
+    }
+    .Video::before {
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0,60,0,0.9) 0%, rgba(30,110,20,0.9) 25%, rgba(20,155,0,0.9) 50%, rgba(60,200,60,0.9) 75%, rgba(20,240,45,0.9) 100%);
+        z-index: -1;
+    }
+    .Video div div i{
+        font-size:50px;
+        text-align: center;
+        background-color:transparent;
+    }
+    .Video div div p{
+        color:white;
+        font-size:1.25em;
+        font-weight:600;
+        margin: 22.5px 0 15px 0;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.6);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+        }
+        25% {
+            transform: scale(0.7);
+            box-shadow: 0 0 0 10px rgb(255, 255, 255,0.2);
+        }
+        50% {
+            transform: scale(0.8);
+            box-shadow: 0 0 0 20px rgb(255, 255, 255,0.3);  
+        }
+        75% {
+            transform: scale(0.9);
+            box-shadow: 0 0 0 30px rgb(255, 255, 255,0.4);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 40px rgb(255, 255, 255,0.5);
+        }
+    }    
+    .Play{
+         display:inline-block;
+         background-color: transparent;
+         border:0 solid transparent;
+         border-radius: 50%;
+         padding:0;
+         margin:0;
+         transform: scale(1);
+         animation: pulse 0.5s infinite;
+         max-height: 50px;
+    }
+    .Play:hover{
+        background:none;
+    }
+    .AppButtons{
+        display:flex;
+        flex-direction:row;
+        margin-top:45px;
+    }
+    .GooglePlay{
+        color:rgba(20,155,0,0.9);
+        background-color: white;
+        margin-right:15px;
+        Padding:12px 30px;
+    }
+    .GooglePlay::before{
+        font-family:"Material Icons";
+        content:"adb";
+
+    }
+    .GooglePlay:hover{
+        background-color: transparent;
+        color:white;
+        transition:0.2s;
+    }
+    .AppStore{
+        color:white;
+        background-color: transparent;
+        padding:12px 30px;
+    }
+    .AppStore::before{
+        font-family:"Material Icons";
+        content:"water_drop"
+    }
+    .AppStore:hover{
+        color:rgba(20,155,0,0.9);
+        transition:0.2s;
+    }
+    .Package{
+        text-align:center;
+    }
+    .Upper{
+        margin-top:50px;
+        Margin-bottom:0px;
+    }
+    .Upper div{
+        color:rgba(20,155,0,0.9);
+        text-transform: uppercase;
+        font-weight:600;
+    }   
+    .Upper h1{
+        font-size: 2.441em;
+        font-weight:600;
+        line-height:1.21;
+        margin-bottom: 15px;
+    }
+    .Upper p{
+        color:#707070;
+        font-size:1rem;
+        line-height: 1.7;
+    }
+    .Package::before{
+        content:"";
+        background: url('shape-bg-right.svg') no-repeat;
+        position: absolute;
+        z-index: -1;
+        width: 45%;
+        height: 120%;
+        left: 55%;
+    }
+    .Package p a{
+        text-decoration:none;
+        color:rgb(179, 30, 179);
+    }
+    .Package p a:hover{
+        color:#6582ed;
+    }
+    .Stack{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding:50px;
+    }
+    .Border{
+        border: 1px solid rgba(128, 128, 128, 0.253);
+        border-radius:5%;
+        max-width:30.5%;
+        padding-top:5%;
+        padding-bottom:5%;
+        background-color:white;
+    }
+    .Border:hover{
+        box-shadow:0px -3px 0px 0px rgba(20,155,0,0.9);
+        border-radius:7%;
+        Transition:0.2s;
+    }
+    .Border:nth-child(2){
+        box-shadow:0px -3px 0px 0px rgba(20,155,0,0.9);
+    }
+    .Border:nth-child(2) a {
+        background-color:rgba(20,155,0,0.9);
+        box-shadow:0px 10px 30px 0px rgba(20,155,0,0.5);
+        color:white;
+    }
+    .Border:nth-child(2) a:hover {
+        background-color:white;
+        color:rgba(20,155,0,0.9);
+        transition:0.2s;
+    }
+    .Border:nth-child(odd) a:hover {
+        background-color: rgba(20,155,0,0.9);
+        box-shadow:0px 10px 30px 0px rgba(21, 155, 0, 0.5);
+        color:white;
+        transition:0.2s;
+    }
+    .Stack div h1{
+        font-size:1.25rem;
+    }
+    .Stack div img{
+        margin-top:15px;
+        margin-bottom:22.5px;
+        height: 65px;
+        width:65px;
+    }
+    .Stack div p{
+        line-height:1.7;
+        max-width: 50%;
+        padding-left:25%;
+        font-size:14px;
+        line-height: 28px;
+        color:rgb(132, 146, 166);
+    }
+    .Stack div div{
+        padding:22.5px 0px;
+        color:rgba(20,155,0,0.9);
+        font-size:2.5rem;
+        font-weight:700;
+    }
+    .Stack div a{
+        padding:10px 25px;
+        color: rgba(20,155,0,0.9);
+        border: 2px solid rgba(20,155,0,0.9);
+        border-radius:-10%;
+        font-weight:400;
+        font-size:1rem;
+    }
+    .Stack2{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    .Stack2 div{
+        width:45%;
+    }
+    .Stack2 div span{
+        display:flex;
+        justify-content:start;
+        color:rgba(20,155,0,0.9);
+        font-size:0.95rem;
+    }
+    .Stack2 div h1{
+        display:flex;
+        justify-content:start;
+        margin-bottom:20px;
+    }
+    .Stack2 div p{
+        font-size: 1.15rem;
+        color: #707070;
+        font-weight: 400;
+        line-height: 1.75;
+        text-align:start;
+        margin-bottom:20px;
+    }
+    .AdImage{
+        display:flex;
+        flex-direction:row;
+    }
+    .AdImage img{
+        height:25px;
+        width:85px; 
+        margin:5px 0px;
+        padding-right:50px;
+    }
+    .AdImage a img:hover{
+        height:30px;
+        width:100px;
+        transition: 0.5s;
+    }
+    .Stack3{
+        width:50%;
+        margin-top:50px;
+    }
+    .Stack3 div{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        text-align:start;
+    }
+    .Stack3 div div{
+        display:block;
+        padding-left:15px;
+    }
+    .Stack3 p{
+        line-height:1.7 !important;
+        color:#707070 !important;
+        font-size:1rem !important;
+    }
+    .Arrow i{
+        border-radius:50%;
+        padding:15px;
+        color:rgba(20,155,0,0.9);
+        font-size:900;
+        border: 1px solid rgb(201, 194, 194);
+        background-color: white;
+    }
+    .Arrow i:hover{
+        background: rgba(20,155,0,0.9);
+        color:white;
+        transition:0.2s;
+    }
+.M{
+    width:61%; 
+    margin-left:20%; 
+    margin-bottom:5%;
+
+}
+.Slider{
+    width:100vw;
+    margin-left: calc( (1200px - 100vw) / 2 );
+    margin-right: calc( (100vw - 1200px) / 2 );
+    display:flex;
+    justify-content: center;
+}
+.Grey{
+    background-color:#f4f7fa;
+}
+.Bubbles{
+    margin-top: 6%;
+    margin-left:1.8%;
+    display:flex;
+    justify-content: center;
+}
+.Bubbles button{
+    background-color:#D6D6D6;
+    padding:6px;
+    margin-left:15px;
+    border-radius:50%;
+    border:none;
+    transition:0.2s;
+}
+.Bubbles button:nth-child(3){
+    background-color:rgba(20,155,0,0.9);
+}
+.Bubbles button:hover{
+    background-color:#707070;
+}
+.P20{
+    box-sizing: border-box;
+    width:15.3%;
+    padding:15px;
+    border-radius:50px;
+    z-index: 1;
+}
+.Absolute{
+    position:absolute;
+    z-index: 5;
+}
+.Overflow{
+    overflow:hidden;
+}
+.Background3{
+    background:url('app-hero-bg.jpg') no-repeat center center / cover;
+    position:relative;
+    z-index: -1;
+    width:100%
+}
+.Background3:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,60,0,0.9) 0%, rgba(30,110,20,0.9) 25%, rgba(20,155,0,0.9) 50%, rgba(60,200,60,0.9) 75%, rgba(20,240,45,0.9) 100%);
+    z-index: -1;
+}
+.Background3 .flex{
+    justify-content: space-between;
+}
+.Licence{
+    width:50%;
+}
+.Licence div h1{
+    font-weight: 600;
+    font-size:1.1rem;
+    color:#707070;
+    padding:25px 10px;
+}
+.Licence div h1 i{
+    background:none;
+    color:#707070;
+    font-size:1.0rem;
+}
+.Licence div{
+    background-color:white;
+    border-radius:5px;
+    margin: 20px 0px;
+}
+.Licence div p{
+    border-top:1px solid lightgray;
+    padding:25px 15px;
+    font-size:0.95rem;
+}
+.Licence div h1:before{
+    font-family:"Material Icons";
+    content:"add"; 
+    position:relative;
+    left:94%;
+}
+.Licence div h1:first-child:before{
+    font-family:"Material Icons";
+    content:"remove"; 
+    position:relative;
+    left:94%;  
+}
+#Iframe{
+    position: fixed;
+    top:100px;
+    left:360px;
+    z-index: 101;
+}
+#Batonas{
+    z-index:102;
+    position: fixed;
+    left:1530px;
+    top:90px;
+    display:none;
+    background: transparent;
+    border: none;
+    color:white;
+    font-size:40px;
+}
+#Batonas:hover{
+    color: lightgray;
+}
+#BatonasBackground{
+        background: rgba(0, 0, 0, 0.600);
+        position:fixed;
+        z-index:100;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        display:none;
+}

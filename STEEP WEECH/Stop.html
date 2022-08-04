@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Ze Watch
+    </title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .Skaiciai div {
+            font-size: 10rem;
+            height: 210px;
+        }
+
+        .Skaiciai div:nth-child(2) {
+            font-size: 5rem;
+            height: 120px;
+        }
+
+        .Skaiciai div:nth-child(3) {
+            font-size: 3rem;
+            height: 85px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <div style="width:800px" class="bg-secondary">
+            <h1 class="d-flex justify-content-center">STOP ZE WATCH</h1>
+            <div class="d-flex justify-content-center Skaiciai align-items-end">
+                <div data-content="Minute" name="Minute">0</div>m
+                <div data-content="Second" name="Second">00</div>s
+                <div data-content="milisecond" name="Milisecond">00</div>ms
+            </div>
+            <div class="d-flex justify-content-start p-3">
+                <button class="btn btn-dark me-3" onclick="baton()" name="Start">START</button>
+                <button class="btn btn-light" onclick="Reset()" name="Reset">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="Watch.js"></script>
+</body>
+
+</html>
